@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello, WASM!</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        p {
+            margin: 5px;
+            width: fit-content;
+        }
+
+        #output {
+            padding: 5px;
+            border: 2px solid #333;
+            width: fit-content;
+        }
+    </style>
 </head>
 <body>
-    <div id="output"></div>
+    <main>
+        <p>The text in the box was output using WebAssembly</p>
+        <p id="output"></p>
+    </main>
+    
     <script type="module">
         import init, { greet } from './pkg/hello_wasm.js';
         async function run() {
