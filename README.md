@@ -28,6 +28,6 @@ file-writer/
 ├── .gitignore   # Ignores /target
 ├── Cargo.lock   # Helps compile
 ├── Cargo.toml   # Dependencies are here
-├── index.html   # HTML file
-└── README.md    # You read it right now
+├── README.md    # You read it right now
+└── index.html   # HTML file
 ```
