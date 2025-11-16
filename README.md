@@ -23,12 +23,14 @@
 5. Open http://localhost:8080 in your browser. You'll see **Hello, WASM!**
 ## Project structure
 ```
-file-writer/
+hello-wasm/
+├── .github/workflows/
+    └── gh-pages.yml   # Deploys to GitHub Pages
 ├── srs/
     └── lib.rs   # Rust source code
 ├── .gitignore   # Ignores /target
 ├── Cargo.lock   # Helps compile
 ├── Cargo.toml   # Dependencies are here
-├── README.md    # You read it right now
+├── README.md   # You read it right now
 └── index.html   # HTML file
 ```
